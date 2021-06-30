@@ -9,7 +9,7 @@ newFCT2 = function(L = 100, P = 10) { ## L = Length of the simulation, P = Numbe
       data3 = cumprod(data2)
       x <- seq(1,L,1)
       y <- data3
-      lines(x, y, col="black", type="l")
+      lines(x, y, col=rgb(runif(255),runif(255),runif(255)), type="l") ## Random color generation
     }
   }
   else {
