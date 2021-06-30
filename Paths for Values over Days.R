@@ -2,7 +2,7 @@ newFCT2 = function(L = 100, P = 10) { ## L = Length of the simulation, P = Numbe
   ##Next step: use data.frame to return full data if requested
   if (is.numeric(L) == TRUE & is.numeric(P) == TRUE) { ## Check if inputs are valid
     plot(rnorm(L, 0.000, 0.025), type = "l", ylim = c(0, 3), xlab = "Number of Days", 
-         ylab = "Expected Value", col="white") ## This path doesn't show up, I left it there because I don't know how to create an empty plot
+         ylab = "Expected Value", main="Expected Value over Days",col="white") ## This path doesn't show up, I left it there because I don't know how to create an empty plot
     for (i in 1:P) { ## Repeat for each path
       data1 = rnorm(L, 0.000, 0.025)
       data2 = data1 + 1
